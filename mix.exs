@@ -10,7 +10,8 @@ defmodule SurveyLive.MixProject do
       compilers: [:gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      releases: releases()
     ]
   end
 
@@ -59,6 +60,15 @@ defmodule SurveyLive.MixProject do
       {:phoenix_swoosh, "~> 1.0.0"},
       {:premailex, "~> 0.3.0"},
       {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
+    ]
+  end
+
+  defp releases() do
+    [
+      survey_live: [
+        include_executables_for: [:unix],
+        cookie: "0LRCO600OdhopuCgM3iaKxE83wTD4eDZvJo7VZNUPGYiS0LE5ID01Q=="
+      ]
     ]
   end
 
