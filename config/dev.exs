@@ -23,7 +23,7 @@ config :survey_live, SurveyLiveWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "NXYgOFnzHuEB2v/zocWUHXd8rDfmNGYeiCpswT55pAPtrO7pNP+c5IJOfBKQoL0g",
+  secret_key_base: "TGg1FbkgevMNiToncZDRoZ+/yFHJ1PogAdOaewmlYy8klbYi1Gl2QO/1JYmS/RDx",
   watchers: [
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     esbuild: {Esbuild, :install_and_run, [:default, ~w(--sourcemap=inline --watch)]},
