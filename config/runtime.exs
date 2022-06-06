@@ -53,7 +53,12 @@ if config_env() == :prod do
 
   config :survey_live, SurveyLiveWeb.Endpoint,
     url: [host: host, port: 443, scheme: "https"],
-    check_origin: ["https://surveylive.online", "https://wispy-moon-7859.fly.dev/", "https://www.surveylive.online"],
+    check_origin: [
+      "https://surveylive.online",
+      "https://wispy-moon-7859.fly.dev/",
+      "https://www.surveylive.online"],
+      "https://undi.online",
+      "https://www.undi.online",
     http: [
       # Enable IPv6 and bind on all interfaces.
       # Set it to  {0, 0, 0, 0, 0, 0, 0, 1} for local network only access.
