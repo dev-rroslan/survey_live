@@ -56,9 +56,9 @@ if config_env() == :prod do
     check_origin: [
       "https://surveylive.online",
       "https://wispy-moon-7859.fly.dev/",
-      "https://www.surveylive.online"],
+      "https://www.surveylive.online",
       "https://undi.online",
-      "https://www.undi.online",
+      "https://www.undi.online",],
     http: [
       # Enable IPv6 and bind on all interfaces.
       # Set it to  {0, 0, 0, 0, 0, 0, 0, 1} for local network only access.
