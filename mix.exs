@@ -56,7 +56,7 @@ defmodule SurveyLive.MixProject do
       {:bcrypt_elixir, "~> 3.0"},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
       {:guardian, "~> 2.0"},
-      {:oban, "~> 2.10.1"},
+      {:oban, "~> 2.13.0"},
       {:phoenix_swoosh, "~> 1.0.0"},
       {:premailex, "~> 0.3.0"},
       {:tailwind, "~> 0.1", runtime: Mix.env() == :dev},
